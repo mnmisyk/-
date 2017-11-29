@@ -27,18 +27,21 @@ namespace 异步编程
         {
             const int LargeNumber = 6000000;
             sw.Start();
-
+           
             Task<int> t1 = CountCharacterAsync(1, "http://www.microsoft.com");
-           // t1.Wait(); 等待这个任务执行完成再去执行其他
+            // t1.Wait(); 等待这个任务执行完成再去执行其他
+         
             Task<int> t2 = CountCharacterAsync(2, "http://www.illustratedcsharp.com");
-           // t2.Wait();
+            //t2.Wait();
+           // Console.WriteLine("3"+t2.Result);
             CountToAlargeNumber(1, LargeNumber);
             CountToAlargeNumber(2, LargeNumber);
             CountToAlargeNumber(3, LargeNumber);
             CountToAlargeNumber(4, LargeNumber);
-            
+            Console.WriteLine("4");
             Console.WriteLine("chars in www.microsoft.com : {0}", t1.Result);
             Console.WriteLine(" chars in www.illustatecsharp.com : {0}", t2.Result);
+            Console.WriteLine("time in total : " + sw.Elapsed.TotalMilliseconds);
 
         }
         //async 相当于一个标志，标志这个是异步方法，await 指明需要异步执行的地方 ，一个
@@ -57,12 +60,14 @@ namespace 异步编程
             Console.WriteLine("starting call {0} : {1} ms", 
                 id, sw.Elapsed.TotalMilliseconds);
             string result = await wc.DownloadStringTaskAsync(new Uri(site));
-      
+           
             Func<int, int> nf = new Func<int, int>(get10);
             await Task.Run(() =>  get10(2));   // 使用lambada表达式逃避task类型的约束
 
             Console.WriteLine(" Call {0} completed : {1} ms",
                 id, sw.Elapsed.TotalMilliseconds);
+
+            await Task.Delay(5000);
             return result.Length;
            
         }
