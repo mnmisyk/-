@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "异步编程", "异步编程\异步编程.csproj", "{03431749-46D5-425B-8CCD-B6029A036276}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorker", "BackgroundWorker\BackgroundWorker.csproj", "{7E6035DE-DAAF-40B1-ABD0-F655DE8751DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "网卡名称获取", "网卡名称获取\网卡名称获取.csproj", "{6C6770D5-E2DA-418F-87F6-F78643CC987D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{7E6035DE-DAAF-40B1-ABD0-F655DE8751DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E6035DE-DAAF-40B1-ABD0-F655DE8751DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E6035DE-DAAF-40B1-ABD0-F655DE8751DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C6770D5-E2DA-418F-87F6-F78643CC987D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6770D5-E2DA-418F-87F6-F78643CC987D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C6770D5-E2DA-418F-87F6-F78643CC987D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6770D5-E2DA-418F-87F6-F78643CC987D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7D7D7F3-2422-4A9A-9EC2-E2AEBD876BC8}
 	EndGlobalSection
 EndGlobal

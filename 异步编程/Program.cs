@@ -29,7 +29,7 @@ namespace 异步编程
             sw.Start();
            
             Task<int> t1 = CountCharacterAsync(1, "http://www.microsoft.com");
-            // t1.Wait(); 等待这个任务执行完成再去执行其他
+             //t1.Wait();// 等待这个任务执行完成再去执行其他
          
             Task<int> t2 = CountCharacterAsync(2, "http://www.illustratedcsharp.com");
             //t2.Wait();
