@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorker", "Backgro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "网卡名称获取", "网卡名称获取\网卡名称获取.csproj", "{6C6770D5-E2DA-418F-87F6-F78643CC987D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmd命令", "cmd命令\cmd命令.csproj", "{9DB93012-14D0-4A4C-AB4D-BF325C5095F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yolo", "yolo\yolo.csproj", "{433F5FBB-0240-4CBD-8AB4-5CD0B7615B8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6C6770D5-E2DA-418F-87F6-F78643CC987D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C6770D5-E2DA-418F-87F6-F78643CC987D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C6770D5-E2DA-418F-87F6-F78643CC987D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB93012-14D0-4A4C-AB4D-BF325C5095F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB93012-14D0-4A4C-AB4D-BF325C5095F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB93012-14D0-4A4C-AB4D-BF325C5095F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB93012-14D0-4A4C-AB4D-BF325C5095F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433F5FBB-0240-4CBD-8AB4-5CD0B7615B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433F5FBB-0240-4CBD-8AB4-5CD0B7615B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433F5FBB-0240-4CBD-8AB4-5CD0B7615B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433F5FBB-0240-4CBD-8AB4-5CD0B7615B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

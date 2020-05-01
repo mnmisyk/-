@@ -23,14 +23,14 @@ namespace 异步编程
     class MyDownloadString
     {
         Stopwatch sw = new Stopwatch();
-        public void DoRun()
+        public async void DoRun()
         {
             const int LargeNumber = 6000000;
             sw.Start();
-           
-            Task<int> t1 = CountCharacterAsync(1, "http://www.microsoft.com");
-             //t1.Wait();// 等待这个任务执行完成再去执行其他
-         
+            int t1 = await CountCharacterAsync(1, "http://www.microsoft.com");
+            //Task<int> t1 = CountCharacterAsync(1, "http://www.microsoft.com");
+            //t1.Wait();// 等待这个任务执行完成再去执行其他
+
             Task<int> t2 = CountCharacterAsync(2, "http://www.illustratedcsharp.com");
             //t2.Wait();
            // Console.WriteLine("3"+t2.Result);
@@ -39,7 +39,7 @@ namespace 异步编程
             CountToAlargeNumber(3, LargeNumber);
             CountToAlargeNumber(4, LargeNumber);
             Console.WriteLine("4");
-            Console.WriteLine("chars in www.microsoft.com : {0}", t1.Result);
+            Console.WriteLine("chars in www.microsoft.com : {0}", t1/*.Result*/);
             Console.WriteLine(" chars in www.illustatecsharp.com : {0}", t2.Result);
             Console.WriteLine("time in total : " + sw.Elapsed.TotalMilliseconds);
 
